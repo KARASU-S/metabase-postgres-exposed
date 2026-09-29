@@ -1,0 +1,12 @@
+# nmap -sT -p 3000,5432 --open 203.0.113.10
+PORT     STATE SERVICE
+3000/tcp open  ppp
+5432/tcp open  postgresql
+
+# nmap -p 22 --script ssh-auth-methods test.example.dev
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-auth-methods:
+|   Supported authentication methods:
+|     publickey
+|_    password
